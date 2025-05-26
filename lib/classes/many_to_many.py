@@ -74,7 +74,7 @@ class Author:
     def name(self,value):
         if not isinstance(value, str):
             raise TypeError("Name must be of type str.")
-        if hasattr(set, '_name'):
+        if hasattr(self, '_name'):
             raise AttributeError("Cannot change name after author is instantiated.")
         self._name = value
 
